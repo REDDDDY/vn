@@ -2294,10 +2294,10 @@
 		</div>
 		<script>
 		
-			if (window.location.hostname.indexOf("reddddy.webhop.me") == 0) {
-				window.location = window.location.href.replace("www.obs.ninja","obs.ninja"); // the session.salt is domain specific; let's consolidate www as a result.
-			} else if (window.location.hostname.indexOf("reddddy.webhop.me") == 0) {
-				window.location = window.location.href.replace("www.vdo.ninja","vdo.ninja"); // the session.salt is domain specific; let's consolidate www as a result.
+			if (window.location.hostname.indexOf("www.obs.ninja") == 0) {
+				window.location = window.location.href.replace("www.reddddy.webhop.me","reddddy.webhop.me"); // the session.salt is domain specific; let's consolidate www as a result.
+			} else if (window.location.hostname.indexOf("www.vdo.ninja") == 0) {
+				window.location = window.location.href.replace("www.reddddy.webhop.me","reddddy.webhop.me"); // the session.salt is domain specific; let's consolidate www as a result.
 			} else if (("isSecureContext" in window) && (window.isSecureContext===false)){
 				console.error("This site must be run in a secure context; please ensure all links, iframes, and parent windows are using SSL");
 			}
